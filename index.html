@@ -64,7 +64,7 @@
       <p>Front-End Developer Angular</p>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <img src="./images/صورة شخصية .jpg" alt="Your Photo" class="about-img" />
       <div class="about-text">
         <h2>About Me</h2>
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>My Projects</h2>
       <div class="project-cards">
         <!-- Project Card -->
@@ -180,8 +180,8 @@
       </div>
     </section>
     <!-- Tools Section -->
-    <!-- Tools Section -->
-    <section class="tools-section">
+
+    <section class="tools-section" id="tools">
       <div class="container">
         <h2 class="section-title">My Tools</h2>
         <div class="swiper tools-slider">
@@ -238,7 +238,7 @@
 
     <!-- Contact -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Let's work together!</h2>
       <form id="contactForm">
         <div class="form-group">
@@ -273,6 +273,15 @@
       window.addEventListener("load", function () {
         const preloader = document.getElementById("preloader");
         preloader.style.display = "none";
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
 
       var swiper = new Swiper(".tools-slider", {
