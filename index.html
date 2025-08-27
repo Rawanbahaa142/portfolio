@@ -3,16 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Rawan Bahaa</title>
+
+    <title>Rawan_Bahaa Portfolio</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/logo_remove.png"
+      sizes="64x64"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <header class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/logo_remove.png" alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <a href="https://wa.me/201068262697" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/rawan-bahaa-a12530295/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Rawanbahaa142" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
     <section class="hero">
-      <h1>Rawan Bahaa Hamed</h1>
-      <p>Front_End Developer</p>
-      <!-- <h2>Ideas made possible.</h2> -->
+      <div class="hero-content">
+        <h1 id="typing-text"></h1>
+      </div>
+      <p>Front-End Developer Angular</p>
     </section>
 
     <section class="about">
@@ -130,126 +179,196 @@
         </div>
       </div>
     </section>
-    <!-- Tools Section -->  
-  <!-- Tools Section -->
-<section class="tools-section">
-  <div class="container">
-    <h2 class="section-title">My Tools</h2>
-    <div class="swiper tools-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/html.png" alt="HTML">
-          <p>HTML</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/css.webp" alt="CSS">
-          <p>CSS</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/js.png" alt="JavaScript">
-          <p>JavaScript</p>
-        </div>
-          <div class="swiper-slide">
-          <img src="./images/angular.jpeg" alt="Angular">
-          <p>Angular</p>
-        </div>
-         <div class="swiper-slide">
-          <img src="./images/bootstrap.jpeg" alt="Bootstrap">
-          <p>Bootstrap</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/tailwind.png" alt="Tailwind">
-          <p>Tailwind</p>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/type.png" alt="TypeScript">
-          <p>TypeScript</p>
-        </div>
-           <div class="swiper-slide">
-          <img src="./images/postman.png" alt="postman">
-          <p>Postman</p>
-        </div>
-      
-        <div class="swiper-slide">
-          <img src="./images/git.png" alt="Git & GitHub">
-          <p>Git & GitHub</p>
-        </div>
-       
-        <div class="swiper-slide">
-          <img src="./images/figma.png" alt="Figma">
-          <p>Figma</p>
+    <!-- Tools Section -->
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">My Tools</h2>
+        <div class="swiper tools-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/html.png" alt="HTML" />
+              <p>HTML</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/css.webp" alt="CSS" />
+              <p>CSS</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/js.png" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/angular.jpeg" alt="Angular" />
+              <p>Angular</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/bootstrap.jpeg" alt="Bootstrap" />
+              <p>Bootstrap</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/tailwind.png" alt="Tailwind" />
+              <p>Tailwind</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/type.png" alt="TypeScript" />
+              <p>TypeScript</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/postman.png" alt="postman" />
+              <p>Postman</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/git.png" alt="Git & GitHub" />
+              <p>Git & GitHub</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./images/figma.png" alt="Figma" />
+              <p>Figma</p>
+            </div>
+          </div>
+          <div class="swiper-buttons">
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
-      <!-- Pagination & Navigation -->
-       <div class="swiper-buttons">
-      <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-   
+    </section>
 
     <!-- Contact -->
+
     <section class="contact">
       <h2>Let's work together!</h2>
-      <form>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="tel" placeholder="Phone Number" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email Address" />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" id="phone" placeholder="Phone Number" />
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
         <button type="submit">Send Message</button>
       </form>
-      <div class="contact-info">
-        <p>Phone: +201068262697</p>
-        <p>Email: rwanalrawy162@gmail.com</p>
-        <p>Address: Qena, Egypt</p>
-        <p>
-          <a href="https://wa.me/201068262697">WhatsApp</a> |
-          <a href="https://www.linkedin.com/in/rawan-bahaa-a12530295/"
-            >LinkedIn</a
-          >
-          |
-          <a href="https://github.com/Rawanbahaa142">GitHub</a>
-        </p>
-      </div>
     </section>
 
     <footer>
       <p>&copy; 2025 Rawan Bahaa. All Rights Reserved.</p>
     </footer>
 
-    
-<script>
-  var swiper = new Swiper(".tools-slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 4,
-      },
-      1024: {
-        slidesPerView: 5,
-      }
-    }
-  });
-</script>
+    <script>
+      window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.display = "none";
+      });
 
+      var swiper = new Swiper(".tools-slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        },
+      });
+
+      const text = "Rawan Bahaa Hamed";
+      const typingText = document.getElementById("typing-text");
+      let index = 0;
+
+      function typeEffect() {
+        if (index < text.length) {
+          typingText.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, 170);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", typeEffect);
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("fullName").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          const nameError = document.getElementById("nameError");
+          const emailError = document.getElementById("emailError");
+          const phoneError = document.getElementById("phoneError");
+          const messageError = document.getElementById("messageError");
+
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const phoneRegex = /^[0-9]{10,15}$/;
+
+          let isValid = true;
+
+          if (name === "") {
+            nameError.textContent = "Please enter your full name.";
+            isValid = false;
+          } else {
+            nameError.textContent = "";
+          }
+
+          if (!emailRegex.test(email)) {
+            emailError.textContent = "Please enter a valid email.";
+            isValid = false;
+          } else {
+            emailError.textContent = "";
+          }
+
+          if (!phoneRegex.test(phone)) {
+            phoneError.textContent = "Please enter a valid phone number.";
+            isValid = false;
+          } else {
+            phoneError.textContent = "";
+          }
+
+          if (message.length < 10) {
+            messageError.textContent =
+              "Message must be at least 10 characters.";
+            isValid = false;
+          } else {
+            messageError.textContent = "";
+          }
+
+          if (isValid) {
+            alert("Message sent successfully!");
+            this.reset();
+          }
+        });
+    </script>
   </body>
 </html>
